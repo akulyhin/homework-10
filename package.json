@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/AleksaHrevtsova/initial-repository/issues"
   },
-  "homepage": "https://github.com/AleksaHrevtsova/initial-repository#readme",
+  "homepage": "https://akulyhin.github.io/homework-10",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
