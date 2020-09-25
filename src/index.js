@@ -14,13 +14,20 @@ const Theme = {
     DARK: 'dark-theme',
   };
 
+  if (localStorage.getItem("theme")) {
+    body.classList.add(Theme.DARK);
+    checkbox.checked = true;
+  }
+
 checkbox.addEventListener('change', (event) => {
     if (event.target.checked) {
-        body.classList.add(Theme.DARK);
-        body.classList.remove(Theme.LIGHT);
+        (localStorage.setItem("theme", " "),
+        body.classList.add(Theme.DARK),
+        body.classList.remove(Theme.LIGHT));
     }
      else {
-        body.classList.remove(Theme.DARK);
-        body.classList.add(Theme.LIGHT);
+        (localStorage.removeItem("theme"),
+        body.classList.remove(Theme.DARK),
+        body.classList.add(Theme.LIGHT));
     }
 })
