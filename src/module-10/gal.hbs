@@ -1,0 +1,8 @@
+{{#each gallery}}
+{{#each images }}
+<li>
+  <img src="somePath/{{this}}">
+  <p>{{lookup ../description @index}}</p>
+</li>
+{{/each}}
+{{/each}}
